@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My Own CSS Styles -->
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>The Miata! | An Introduction!</title>
+</head>
+<body>
+    <main id="main-content">
+        <h1> A Quick Guide on the <span class="car-name">Miata!</span> </h1>
+
+        <!-- Grouped each listing using section as using article tag isn't suitable as our content can't be a standalone content because article tags are self contained and can
+        stand on their own, div is possible to use but section makes much more sense for semantics
+        -->
+
+        <!-- Each tag has a class so that I can select them directly and not accidentally style a similar element and it's also for specificity purposes. -->
+
+        <!-- The purpose of this div is so that we can put a background image, the img element-->
+        <div class="gif"></div>
+
+        <section class="reasons-buy">
+            <h2> Reasons to buy a <span class="car-name">Miata!</span> </h2>
+            <ul class="reasons-list">
+                <li>Small car; will fit in most parking spaces</li>
+                <li>It looks cool!</li>
+                <li>It's a <span class="car-name">Miata</span> and fun to drive!</li>
+            </ul>
+        </section>
+
+        <section class="car-maintenance">
+            <h2> Steps to maintain your <span class="car-name">Miata!</span> </h2>
+            <ol class="maintenance-list">
+                <li>Cleaning!
+                    <ul>
+                        <li>Hand wash it! (Preferably out of the sun) </li>
+                        <li>Dry it w/ towel</li>
+                    </ul>
+                </li>
+                <li>Drive Carefully</li>
+                <li>Take Routine <span class="maintenance-highlight">Maintenance</span> Seriously!</li>
+                <!-- Enclosed the maintenance word with span to able to highlight that part of the sentence
+                Using spans is a good way to select parts of a paragraph in order to style them separately
+                -->
+                <li>Cover with Paint Protection Film!</li>
+            </ol>
+        </section>
+
+        <section class="buying-guide">
+            <h2> Which <span class="car-name">Miata</span> should you buy?</h2>
+            <ul class="miata-list">
+                <li>
+                    <span class="miata-gen">NA(1989-1997)</span>
+                    <ul class="generation-difference">
+                        <li>It is iconic because of it's pop-up headlights!</li>
+                        <li>Very old!</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="miata-gen">NB(1998-2005)</span>
+                    <ul class="generation-difference">
+                        <li>Sadly, the disappearance of the pop-up headlights!</li>
+                        <li>Not as popular and iconic as the NA</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="miata-gen">NC(2006-2015)</span>
+                    <ul class="generation-difference">
+                        <li>Better than the NA and NB</li>
+                        <li>Introduction of the PRHT model which meant better security</li>
+                        <li>Roomy interior and it looks happy and smiling on later years</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="miata-gen">ND(2016-2023~)</span>
+                    <ul class="generation-difference">
+                        <li> Fancier and modern features</li>
+                        <li>A Targa top :( or :)</li>
+                        <li>Beautiful Soul Red Color!</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <p class="quote"> A paragraph that I've chosen.</p>
+        <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">
+            The way to get started is to quit talking and begin doing. -Walt Disney
+        </blockquote>
+        <a href="https://blog.hubspot.com/sales/famous-quotes">https://blog.hubspot.com/sales/famous-quotes.</a>    
+
+    </main>
+</body>
+</html>

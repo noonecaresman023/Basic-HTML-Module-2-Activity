@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans:ital,wght@0,400;0,700;1,500&display=swap');
+/* Another way of importing custom fonts into your document! */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centers the body content*/
+    min-height: 100vh; /* This will set the body height to take up 100% of the viewport */
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.gif{
+    background: url(./assets/wink\ wonks.gif);
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -60%;
+}
+
+/* Applies a special style to the list type of list of reasons why you should buy the car */
+.reasons-list>li{
+    list-style-image: linear-gradient(to left bottom, red, blue);
+}
+
+/* Applies the Upper roman list style on to the steps of maintaining your Miata and the type of Miata you can buy*/
+.maintenance-list>li, .miata-list>li{
+    list-style-type: upper-roman;
+}
+
+/* Applies the lower roman to the "cleaning" list in maintaining your Miata*/
+.maintenance-list>li>ul>li{
+    list-style-type: lower-roman;
+}
+
+/*Applies the • to the differences of each Miata generations*/
+.generation-difference{
+    list-style-type: disc;
+}
+
+.quote{
+    font-weight: 700;
+    color: red;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+
+/* SEPARATED THE SPECIAL STYLES SO THAT IT IS EASILY LOCATED AND EASILY IDENTIFIABLE! */
+/* SPECIAL STYLES */
+.car-name, .maintenance-highlight{
+    color: red;
+}
+
+.miata-gen{
+    font-weight: 600;
+}
